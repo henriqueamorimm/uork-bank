@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uork Bank - Dashboard</title>
+    <link rel="stylesheet" href="https://uork.org/css/uork-cdn19.css">
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .uork-title {
+            color: rgb(37, 35, 35);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .uork-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .uork-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .uork-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard - Uork Bank</title>
+        <link rel="stylesheet" href="https://uork.org/css/uork-cdn19.css">
+    </head>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+    <body>
+        <div class="uork-center dashboard">
+            <h1 style="color: whitesmoke;" id="greeting">Olá, Usuário</h1>
+        </div>
+    
+        <script>
+            var userName = localStorage.getItem("nome");
+    
+            if (userName) {
+                var greetingElement = document.getElementById("greeting");
+                greetingElement.textContent = "Olá, " + userName;
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>

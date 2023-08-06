@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uork Bank - Criação de Conta</title>
+    <link rel="stylesheet" href="https://uork.org/css/uork-cdn19.css">
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .uork-title {
+            color: rgb(37, 35, 35);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .uork-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .uork-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .uork-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="uork-title">Olá, seja bem-vindo ao Uork Bank! Vamos criar sua conta?</h1>
+        <form method="POST">
+            <label class="form-label" for="name">Insira seu nome</label>
+            <input type="text" class="uork-input" name="name" placeholder="Seu nome aqui" required>
+            
+            <label class="form-label" for="email">Insira seu e-mail</label>
+            <input type="email" class="uork-input" name="email" placeholder="Seu e-mail aqui" required>
+            
+            <label class="form-label" for="senha">Insira sua senha</label>
+            <input type="password" class="uork-input" name="senha" placeholder="Sua senha aqui" required>
+            
+            <label class="form-label" for="saldo">Insira seu saldo inicial</label>
+            <input type="number" class="uork-input" name="saldo" placeholder="Seu saldo" required>
+             
+            <button type="submit" class="uork-button">Criar Conta</button>
+        </form>
+    </div>
+</body>
+</html>
